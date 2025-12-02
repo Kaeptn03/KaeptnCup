@@ -1,0 +1,71 @@
+export const theme = {
+  dark: true,
+  colors: {
+    primary: '#FF6B00',
+    secondary: '#FFA500',
+    background: '#0A0E27',
+    surface: '#151B3D',
+    card: '#1A2142',
+    text: '#FFFFFF',
+    textSecondary: '#B0B8D4',
+    border: '#2A3458',
+    error: '#FF3B30',
+    success: '#34C759',
+    warning: '#FF9500',
+    gradient1: '#FF6B00',
+    gradient2: '#FFA500',
+    accent: '#00D9FF',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+  },
+  borderRadius: {
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 24,
+  },
+  shadows: {
+    small: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+      elevation: 5,
+    },
+    medium: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.3,
+      shadowRadius: 4.65,
+      elevation: 8,
+    },
+    large: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 6 },
+      shadowOpacity: 0.37,
+      shadowRadius: 7.49,
+      elevation: 12,
+    },
+  },
+};
+
+export const paperTheme = {
+  dark: true,
+  colors: {
+    primary: theme.colors.primary,
+    accent: theme.colors.secondary,
+    background: theme.colors.background,
+    surface: theme.colors.surface,
+    text: theme.colors.text,
+    disabled: theme.colors.textSecondary,
+    placeholder: theme.colors.textSecondary,
+    backdrop: 'rgba(0, 0, 0, 0.5)',
+    onSurface: theme.colors.text,
+    notification: theme.colors.primary,
+  },
+};
